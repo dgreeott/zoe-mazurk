@@ -2,17 +2,20 @@
 
 * {
   box-sizing: border-box;
+  
   margin: 0;
   padding: 0;
   font-family: "Lato", sans-serif;
 }
 
-.hot,
-.reports,
-.products {
+.about,
+.gallery,
+.contact,
+.home {
+  background-color: #f9f4ef;
   display: flex;
   height: 90vh;
   align-items: center;
   justify-content: center;
-  font-size: 3rem;
+  font-size: 1.5rem;
 }
