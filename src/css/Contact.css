@@ -1,0 +1,16 @@
+
+.formControl {
+    background-color: #dedede;
+    min-width: 100%;
+    min-height: 40px;
+}
+
+.formMessage {
+    background-color: #dedede;
+    min-width: 100%;
+    min-height: 200px;
+}
+
+.col-log {
+    min-width: 100%;
+}

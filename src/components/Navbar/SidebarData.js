@@ -9,25 +9,25 @@ export const SidebarData =[
     {
         title: 'Home',
         path: '/',
-        icon: <AiIcons.AiFillHome />,
+        icon: <AiIcons.AiFillHome size={30} />,
         cName: 'nav-text' 
     },
     {
         title: 'Gallery',
         path: '/gallery',
-        icon: <IoIcons.IoIosPaper />,
+        icon: <IoIcons.IoIosPaper size={30} />,
         cName: 'nav-text' 
     },
     {
         title: 'About',
         path: '/about',
-        icon: <SiIcons.SiAboutDotMe />,
+        icon: <SiIcons.SiAboutDotMe size={30} />,
         cName: 'nav-text' 
     },
     {
         title: 'Contact',
         path: '/contact',
-        icon: <AiIcons.AiFillHome />,
+        icon: <AiIcons.AiFillHome size={30} />,
         cName: 'nav-text' 
     }
 ]
