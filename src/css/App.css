@@ -13,9 +13,14 @@
 .contact,
 .home {
   background-color: #f9f4ef;
+
   display: flex;
   height: 90vh;
   align-items: center;
   justify-content: center;
   font-size: 1.5rem;
+}
+
+.nav {
+  color: #f9f4ef;
 }
