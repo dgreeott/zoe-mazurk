@@ -49,17 +49,16 @@ class Contact extends Component {
 
   render() {
     return (
-      <div className="section">
-        <div className="container-fluid p-4">
-          <div className="row justify-content-center m-4">
-            <div className="container-fluid text-center">
-              <h1 className="title" id="contact">
-                CONTACT ME!
-              </h1>
-              <h6>I WILL GET BACK TO YOU AS SOON AS POSSIBLE!</h6>
-            </div>
-        <div className="container-fluid p-4">
-          <div className="row mt-5">
+      <div className="container-fluid p-4">
+        <div className="row justify-content-center m-4">
+          <div className="container-fluid text-center">
+            <h1 className="title" id="contact">
+              CONTACT ME!
+            </h1>
+            <h6>I WILL GET BACK TO YOU AS SOON AS POSSIBLE!</h6>
+          </div>
+          <div className="container-fluid w-50">
+            <div className="row mt-4">
               <div className="col-sm text-center">
                 <form
                   id="contactForm"
@@ -111,7 +110,6 @@ class Contact extends Component {
             </div>
           </div>
         </div>
-      </div>
       </div>
     );
   }
