@@ -27,7 +27,7 @@ export default function Navbar() {
                 <AiIcons.AiOutlineClose />
               </Link>
             </li>
-            <div className="nameText text-center">
+            <div className="nameText text-center mt-5">
               <h3>Zo&#235; Mazurkiewicz </h3>
             </div>
             {SidebarData.map((item, index) => {
