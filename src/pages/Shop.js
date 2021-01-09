@@ -1,12 +1,12 @@
 import React, { Component } from "react";
 
-class Gallery extends Component {
+class Shop extends Component {
   render() {
     return (
       <>
         <div className="section">
           <div className="container-fluid justify-content-center">
-            <h1>Gallery</h1>
+            <h1>Home</h1>
           </div>
         </div>
       </>
@@ -14,4 +14,4 @@ class Gallery extends Component {
   }
 }
 
-export default Gallery;
+export default Shop;

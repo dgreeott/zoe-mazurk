@@ -24,3 +24,8 @@
 .nav {
   color: #f9f4ef;
 }
+
+div.section {
+  z-index: -1;
+  position: relative;
+}

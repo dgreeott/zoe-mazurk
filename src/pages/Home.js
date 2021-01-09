@@ -1,11 +1,17 @@
-import React from 'react'
+import React, { Component } from "react";
 
-function Home() {
+class Home extends Component {
+  render() {
     return (
-        <div className='home'>
-           <h1>Home</h1> 
+      <>
+        <div className="section">
+          <div className="container-fluid justify-content-center">
+            <h1>Home</h1>
+          </div>
         </div>
-    )
+      </>
+    );
+  }
 }
 
-export default Home
+export default Home;
