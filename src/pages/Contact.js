@@ -1,122 +1,62 @@
-import React, { Component } from "react";
+import React, { useState } from "react";
 import axios from "axios";
 import { Button } from "../components/Button";
 
 import "../css/Contact.css";
 
-class Contact extends Component {
-  constructor(props) {
-    super(props);
-    this.state = {
-      name: "",
-      email: "",
-      subject: "",
-      muessage: "",
-    };
-  }
-
-  onNameChange(event) {
-    this.setState({ name: event.target.value });
-  }
-
-  onEmailChange(event) {
-    this.setState({ email: event.target.value });
-  }
-
-  onMsgChange(event) {
-    this.setState({ message: event.target.value });
-  }
-
-  submitEmail(e) {
+const Contact = () => {
+  const [status, setStatus] = useState("Submit");
+  const handleSubmit = async (e) => {
     e.preventDefault();
-    axios({
+    setStatus("Sending...");
+    const { name, email, message } = e.target.elements;
+    let details = {
+      name: name.value,
+      email: email.value,
+      message: message.value,
+    };
+    let response = await fetch("http://localhost:5000/contact", {
       method: "POST",
-      url: "/send",
-      data: this.state,
-    }).then((response) => {
-      if (response.data.status === "sucess") {
-        alert("Message Sent.");
-        this.resetForm();
-      } else if (response.data.status === "fail") {
-        alert("Message failed to send.");
-      }
+      headers: {
+        "Content-Type": "application/json;charset=utf-8",
+      },
+      body: JSON.stringify(details),
     });
-  }
-
-  resetForm() {
-    this.setState({ name: "", email: "", subject: "", message: "" });
-  }
-
-  render() {
-    return (
-      <>
-      <div className="section">
-        <div className="container-fluid justify-content-center">
-          <div className="row justify-content-center m-4">
-            <div className="container-fluid text-center">
-              <h1 className="title" id="contact">
-                CONTACT ME!
-              </h1>
-              <h6>I WILL GET BACK TO YOU AS SOON AS POSSIBLE!</h6>
+    setStatus("Submit");
+    let result = await response.json();
+    alert(result.status);
+  };
+  return (
+    <form onSubmit={handleSubmit}>
+      <div className="container text-center">
+        <h1 className="title" id="contact">
+          CONTACT ME!
+        </h1>
+        <h6>I WILL GET BACK TO YOU AS SOON AS POSSIBLE!</h6>
+      </div>
+      <div className="container-fluid w-50">
+        <div className="row mt-4">
+          <div className="col-sm text-center">
+            <div>
+              <label htmlFor="name">Name:</label>
+              <input className="formControl" type="text" id="name" required />
             </div>
-            <div className="container-fluid w-50">
-              <div className="row mt-4">
-                <div className="col-sm text-center">
-                  <form
-                    id="contactForm"
-                    onSubmit={this.submitEmail.bind(this)}
-                    method="POST"
-                  >
-                    <div className="formGroup">
-                      <h5>NAME</h5>
-                      <input
-                        placeholder="Name"
-                        id="name"
-                        type="text"
-                        className="formControl rounded m-4"
-                        required
-                        value={this.state.name}
-                        onChange={this.onNameChange.bind(this)}
-                      />
-                    </div>
-                    <div className="formGroup">
-                      <h5>EMAIL</h5>
-                      <input
-                        placeholder="Email"
-                        id="email"
-                        type="email"
-                        className="formControl rounded m-4"
-                        aria-describedby="emailHelp"
-                        required
-                        value={this.state.email}
-                        onChange={this.onEmailChange.bind(this)}
-                      />
-                    </div>
-                    <div className="formGroup">
-                      <h5>MESSAGE</h5>
-                      <input
-                        placeholder="Message"
-                        id="message"
-                        type="text"
-                        className="formMessage rounded m-4"
-                        required
-                        value={this.state.message}
-                        onChange={this.onMsgChange.bind(this)}
-                      />
-                    </div>
-                    <div className="text-center">
-                      <Button className="contactButton">SUBMIT</Button>
-                    </div>
-                  </form>
-                </div>
-              </div>
+            <div>
+              <label htmlFor="email">Email:</label>
+              <input className="formControl" type="email" id="email" required />
+            </div>
+            <div>
+              <label htmlFor="message">Message:</label>
+              <textarea className="formMessage" id="message" required />
+            </div>
+            <div className="text-center">
+              <Button className="contactButton">{status}</Button>
             </div>
           </div>
         </div>
       </div>
-      </>
-    );
-  }
-}
+    </form>
+  );
+};
 
 export default Contact;
