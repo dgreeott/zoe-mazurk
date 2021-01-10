@@ -1,0 +1,6 @@
+@import "~react-image-gallery/styles/css/image-gallery.css";
+
+div.section {
+    z-index: -1;
+    position: relative;
+}
