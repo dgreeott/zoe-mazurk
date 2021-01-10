@@ -1,11 +1,12 @@
 import React, { useState } from "react";
-import axios from "axios";
 import { Button } from "../components/Button";
 
 import "../css/Contact.css";
 
 const Contact = () => {
+
   const [status, setStatus] = useState("Submit");
+  
   const handleSubmit = async (e) => {
     e.preventDefault();
     setStatus("Sending...");
@@ -26,9 +27,11 @@ const Contact = () => {
     let result = await response.json();
     alert(result.status);
   };
+
   return (
     <form onSubmit={handleSubmit}>
-      <div className="container text-center">
+    <div className="section">
+      <div className="container-fluid text-center">
         <h1 className="title" id="contact">
           CONTACT ME!
         </h1>
@@ -54,6 +57,7 @@ const Contact = () => {
             </div>
           </div>
         </div>
+      </div>
       </div>
     </form>
   );
