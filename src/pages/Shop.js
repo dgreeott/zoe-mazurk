@@ -6,7 +6,7 @@ class Shop extends Component {
       <>
         <div className="section">
           <div className="container-fluid justify-content-center">
-            <h1>Home</h1>
+            <h1>Shop</h1>
           </div>
         </div>
       </>
