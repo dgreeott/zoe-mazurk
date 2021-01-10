@@ -13,11 +13,18 @@ export default function Navbar() {
 
   return (
     <>
-      <IconContext.Provider value={{ color: "#fff"}}>
+      <IconContext.Provider value={{ color: "#fff" }}>
         <div className="navbar sticky-top">
+          <div className="col-sm-2">
           <Link to="#" className="menu-bars">
             <FaIcons.FaBars onClick={showSidebar} />
           </Link>
+          </div>
+          <div className="col-sm-10 text-right">
+            <Link to="/shop" className="menu-bars-cart">
+              <AiIcons.AiOutlineShoppingCart size={40} />
+            </Link>
+          </div>
         </div>
 
         <nav className={sidebar ? "nav-menu active" : "nav-menu"}>
@@ -42,12 +49,12 @@ export default function Navbar() {
             })}
             <div className="socialIcon">
               <div className="row">
-              <div className="col-sm InstaIcon">
-                <FaIcons.FaInstagram size={40}/>
-              </div>
-              <div className="col-sm EmailIcon">
-                <AiIcons.AiOutlineMail size={40} />
-              </div>
+                <div className="col-sm InstaIcon">
+                  <FaIcons.FaInstagram size={40} />
+                </div>
+                <div className="col-sm EmailIcon">
+                  <AiIcons.AiOutlineMail size={40} />
+                </div>
               </div>
             </div>
           </ul>
