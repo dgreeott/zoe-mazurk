@@ -32,10 +32,10 @@ const Contact = () => {
     <form onSubmit={handleSubmit}>
     <div className="section">
       <div className="container-fluid text-center">
-        <h1 className="title" id="contact">
-          CONTACT ME!
+        <h1 className="title m-5" id="contact">
+          Contact Me
         </h1>
-        <h6>I WILL GET BACK TO YOU AS SOON AS POSSIBLE!</h6>
+        <h6>I will get back to you as soon as possible!</h6>
       </div>
       <div className="container-fluid w-50">
         <div className="row mt-4">

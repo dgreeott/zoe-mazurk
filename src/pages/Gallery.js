@@ -1,5 +1,4 @@
 import React, { Component } from "react";
-import ImageGallery from "react-image-gallery";
 
 import "../css/Gallery.css";
 
@@ -9,36 +8,48 @@ const GalleryImages = [
     cName: "img-fluid img-thumbnail",
     imageSrc: "https://source.unsplash.com/pWkk7iiCoDM/400x300",
     imageAlt: "",
+    imageTarget: "#carouselExample",
+    imageSlide: "0",
   },
   {
     imageHref: "#",
     cName: "img-fluid img-thumbnail",
     imageSrc: "https://source.unsplash.com/aob0ukAYfuI/400x300",
     imageAlt: "",
+    imageTarget: "#carouselExample",
+    imageSlide: "1",
   },
   {
     imageHref: "#",
     cName: "img-fluid img-thumbnail",
     imageSrc: "https://source.unsplash.com/EUfxH-pze7s/400x300",
     imageAlt: "",
+    imageTarget: "#carouselExample",
+    imageSlide: "2",
   },
   {
     imageHref: "#",
     cName: "img-fluid img-thumbnail",
     imageSrc: "https://source.unsplash.com/M185_qYH8vg/400x300",
     imageAlt: "",
+    imageTarget: "#carouselExample",
+    imageSlide: "3",
   },
   {
     imageHref: "#",
     cName: "img-fluid img-thumbnail",
     imageSrc: "https://source.unsplash.com/sesveuG_rNo/400x300",
     imageAlt: "",
+    imageTarget: "#carouselExample",
+    imageSlide: "4",
   },
   {
     imageHref: "#",
     cName: "img-fluid img-thumbnail",
     imageSrc: "https://source.unsplash.com/AvhMzHwiE_0/400x300",
     imageAlt: "",
+    imageTarget: "#carouselExample",
+    imageSlide: "5",
   },
   {
     imageHref: "#",
@@ -51,32 +62,43 @@ const GalleryImages = [
     cName: "img-fluid img-thumbnail",
     imageSrc: "https://source.unsplash.com/EMSDtjVHdQ8/400x300",
     imageAlt: "",
+    imageTarget: "#carouselExample",
+    imageSlide: "6",
   },
   {
     imageHref: "#",
     cName: "img-fluid img-thumbnail",
     imageSrc: "https://source.unsplash.com/8mUEy0ABdNE/400x300",
     imageAlt: "",
+    imageTarget: "#carouselExample",
+    imageSlide: "7",
   },
   {
     imageHref: "#",
     cName: "img-fluid img-thumbnail",
     imageSrc: "https://source.unsplash.com/G9Rfc1qccH4/400x300",
     imageAlt: "",
+    imageTarget: "#carouselExample",
+    imageSlide: "8",
   },
   {
     imageHref: "#",
     cName: "img-fluid img-thumbnail",
     imageSrc: "https://source.unsplash.com/aJeH0KcFkuc/400x300",
     imageAlt: "",
+    imageTarget: "#carouselExample",
+    imageSlide: "9",
   },
   {
     imageHref: "#",
     cName: "img-fluid img-thumbnail",
     imageSrc: "https://source.unsplash.com/p2TQ-3Bh3Oo/400x300",
     imageAlt: "",
+    imageTarget: "#carouselExample",
+    imageSlide: "10",
   },
 ];
+
 
 class Gallery extends Component {
   render() {
@@ -84,16 +106,19 @@ class Gallery extends Component {
       <>
         <div className="section">
           <div className="container-fluid">
-            <h1 className="font-weight-light text-center text-lg-left mt-4 mb-0">
+            <h1 className="font-weight-light text-center m-5">
               Gallery
             </h1>
 
             <hr class="mt-2 mb-5"></hr>
 
-            <div class="row text-center text-lg-left">
-            {GalleryImages.map((item, index) => {
-              return (
-               
+            <div
+              class="row text-center text-lg-left"
+              data-toggle="modal"
+              data-target="#exampleModal"
+            >
+              {GalleryImages.map((item, index) => {
+                return (
                   <div class="col-lg-3 col-md-4 col-6">
                     <a href={item.imageHref} class="d-block mb-4 h-100">
                       <img
@@ -101,18 +126,21 @@ class Gallery extends Component {
                         className={item.cName}
                         src={item.imageSrc}
                         alt={item.imageAlt}
+                        data-target={item.imageTarget}
+                        data-slide-to={item.imageSlide}
                       />
                     </a>
                   </div>
-                
-              );
-            })}
+                );
+              })}
             </div>
           </div>
         </div>
+
+        
       </>
     );
   }
 }
 
-export default Gallery;
+export default Gallery ;
