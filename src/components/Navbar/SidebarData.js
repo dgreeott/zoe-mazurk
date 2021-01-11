@@ -24,12 +24,6 @@ export const SidebarData =[
         cName: 'nav-text' 
     },
     {
-        title: 'Shop',
-        path: '/shop',
-        icon: <AiIcons.AiOutlineShopping size={30} />,
-        cName: 'nav-text' 
-    },
-    {
         title: 'Contact',
         path: '/contact',
         icon: <IoIcons.IoIosPeople size={30} />,
