@@ -6,6 +6,7 @@ import About from '../pages/About';
 import Gallery from '../pages/Gallery';
 import Shop from '../pages/Shop';
 import Contact from '../pages/Contact';
+import Cart from '../pages/Cart';
 
 
 const App = () => {
@@ -20,6 +21,7 @@ const App = () => {
           <Route path='/about' component={About}/>
           <Route path='/shop' component={Shop}/>
           <Route path='/contact' component={Contact}/>
+          <Route path='/cart' component={Cart}/>
         </Switch>
       </Router> 
     </>

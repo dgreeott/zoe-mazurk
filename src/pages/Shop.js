@@ -1,6 +1,9 @@
 import React, { Component } from "react";
 import { connect } from "react-redux";
+import { addToCart } from "../components/actions/cartActions";
 import "../css/Shop.css";
+
+import { GrAddCircle } from "react-icons/gr";
 
 class Shop extends Component {
   handleClick = (id) => {
@@ -21,7 +24,7 @@ class Shop extends Component {
                 this.handleClick(item.id);
               }}
             >
-              <i className="material-icons">add</i>>
+              <GrAddCircle size={40} />
             </span>
           </div>
 
