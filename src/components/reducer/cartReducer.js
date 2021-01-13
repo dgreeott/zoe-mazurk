@@ -1,4 +1,4 @@
-import Item1 from '../../img/girl-2696947_640.jpg';
+import Item1 from '../../img/pumpkin-786668_640.jpg';
 
 import { ADD_TO_CART,REMOVE_ITEM,SUB_QUANTITY,ADD_QUANTITY,ADD_SHIPPING } from '../actions/actionTypes/cart-actions';
 

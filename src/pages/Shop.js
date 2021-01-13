@@ -24,7 +24,7 @@ class Shop extends Component {
                 this.handleClick(item.id);
               }}
             >
-              <GrAddCircle size={40} />
+              <i className="material-icons">+</i>
             </span>
           </div>
 

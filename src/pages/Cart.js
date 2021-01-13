@@ -1,12 +1,13 @@
-import React, { Component } from "react";
-import { connect } from "react-redux";
-import { Link } from "react-router-dom";
+import React, { Component } from 'react';
+import { connect } from 'react-redux';
+import { Link } from 'react-router-dom';
 import {
   removeItem,
   addQuantity,
   subtractQuantity,
-} from "../components/actions/cartActions";
-import Recipe from "./Recipe";
+} from '../components/actions/cartActions';
+import Recipe from './Recipe';
+import '../css/Shop.css';
 
 class Cart extends Component {
   //to remove the item completely
@@ -77,12 +78,14 @@ class Cart extends Component {
       <p>Nothing.</p>
     );
     return (
-      <div className="container">
-        <div className="cart">
-          <h5>You have ordered:</h5>
-          <ul className="collection">{addedItems}</ul>
+      <div className="section">
+        <div className="container">
+          <div className="cart">
+            <h5>You have ordered:</h5>
+            <ul className="collection">{addedItems}</ul>
+          </div>
+          <Recipe />
         </div>
-        <Recipe />
       </div>
     );
   }
