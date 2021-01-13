@@ -3,8 +3,9 @@ import * as FaIcons from "react-icons/fa";
 import * as AiIcons from "react-icons/ai";
 import { Link } from "react-router-dom";
 import { SidebarData } from "./SidebarData";
-import "./Navbar.css";
 import { IconContext } from "react-icons";
+
+import "./Navbar.css";
 
 export default function Navbar() {
   const [sidebar, setSideBar] = useState(false);
@@ -34,9 +35,11 @@ export default function Navbar() {
                 <AiIcons.AiOutlineClose />
               </Link>
             </li>
-            <div className="nameText text-center mt-5">
-              <h3>Zo&#235; Mazurkiewicz </h3>
+            <div className="nameText center mt-5">
+              <h4>Zo&#235; Mazurkiewicz </h4>
             </div>
+            <div className="row">
+            <div classNamwe="col-sm-12">
             {SidebarData.map((item, index) => {
               return (
                 <li key={index} className={item.cName}>
@@ -47,15 +50,18 @@ export default function Navbar() {
                 </li>
               );
             })}
-           
+            </div>
+            </div>
+            <div className="socialIcon">
               <div className="row">
-                <div className="col-sm">
+                <div className="col-sm-6 center">
                   <FaIcons.FaInstagram size={40} />
                 </div>
-                <div className="col-sm">
+                <div className="col-sm-6 center">
                   <AiIcons.AiOutlineMail size={40} />
                 </div>
               </div>
+            </div>
           </ul>
         </nav>
       </IconContext.Provider>

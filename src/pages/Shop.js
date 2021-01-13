@@ -3,9 +3,9 @@ import { connect } from "react-redux";
 import { addToCart } from "../components/actions/cartActions";
 import "../css/Shop.css";
 
-import { GrAddCircle } from "react-icons/gr";
 
 class Shop extends Component {
+
   handleClick = (id) => {
     this.props.addToCart(id);
   };

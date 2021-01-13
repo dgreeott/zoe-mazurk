@@ -8,6 +8,7 @@ import {
 } from '../components/actions/cartActions';
 import Recipe from './Recipe';
 import '../css/Shop.css';
+import '../../node_modules/materialize-css/dist/css/materialize.min.css'
 
 class Cart extends Component {
   //to remove the item completely
