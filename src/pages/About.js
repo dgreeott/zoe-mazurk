@@ -30,7 +30,7 @@ class About extends Component {
                 </h4>
               </div>
               <div className="col-sm-5 text-right">
-                <img src={Zoe}></img>
+                <img src={Zoe} alt="zoe"></img>
               </div>
             </div>
           </div>
