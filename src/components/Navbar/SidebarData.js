@@ -26,7 +26,7 @@ export const SidebarData =[
     {
         title: 'Shop',
         path: '/shop',
-        icon: <FaIcons.FaComment size={30} />,
+        icon: <AiIcons.AiFillShopping size={30} />,
         cName: 'nav-text' 
     },
     {
