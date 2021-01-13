@@ -21,7 +21,7 @@ export default function Navbar() {
           </Link>
           </div>
           <div className="col-sm-10 text-right">
-            <Link to="/shop" className="menu-bars-cart">
+            <Link to="/cart" className="menu-bars-cart">
               <AiIcons.AiOutlineShoppingCart size={40} />
             </Link>
           </div>
