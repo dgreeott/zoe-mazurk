@@ -4,6 +4,7 @@ import "../css/Gallery.css";
 
 const GalleryImages = [
   {
+    id: "1",
     imageHref: "#",
     cName: "img-fluid img-thumbnail",
     imageSrc: "https://source.unsplash.com/pWkk7iiCoDM/400x300",
@@ -12,6 +13,7 @@ const GalleryImages = [
     imageSlide: "0",
   },
   {
+    id: "2",
     imageHref: "#",
     cName: "img-fluid img-thumbnail",
     imageSrc: "https://source.unsplash.com/aob0ukAYfuI/400x300",
@@ -20,6 +22,7 @@ const GalleryImages = [
     imageSlide: "1",
   },
   {
+    id: "3",
     imageHref: "#",
     cName: "img-fluid img-thumbnail",
     imageSrc: "https://source.unsplash.com/EUfxH-pze7s/400x300",
@@ -28,6 +31,7 @@ const GalleryImages = [
     imageSlide: "2",
   },
   {
+    id: "4",
     imageHref: "#",
     cName: "img-fluid img-thumbnail",
     imageSrc: "https://source.unsplash.com/M185_qYH8vg/400x300",
@@ -36,6 +40,7 @@ const GalleryImages = [
     imageSlide: "3",
   },
   {
+    id: "5",
     imageHref: "#",
     cName: "img-fluid img-thumbnail",
     imageSrc: "https://source.unsplash.com/sesveuG_rNo/400x300",
@@ -44,6 +49,7 @@ const GalleryImages = [
     imageSlide: "4",
   },
   {
+    id: "6",
     imageHref: "#",
     cName: "img-fluid img-thumbnail",
     imageSrc: "https://source.unsplash.com/AvhMzHwiE_0/400x300",
@@ -52,12 +58,14 @@ const GalleryImages = [
     imageSlide: "5",
   },
   {
+    id: "7",
     imageHref: "#",
     cName: "img-fluid img-thumbnail",
     imageSrc: "https://source.unsplash.com/2gYsZUmockw/400x300",
     imageAlt: "",
   },
   {
+    id: "8",
     imageHref: "#",
     cName: "img-fluid img-thumbnail",
     imageSrc: "https://source.unsplash.com/EMSDtjVHdQ8/400x300",
@@ -66,6 +74,7 @@ const GalleryImages = [
     imageSlide: "6",
   },
   {
+    id: "9",
     imageHref: "#",
     cName: "img-fluid img-thumbnail",
     imageSrc: "https://source.unsplash.com/8mUEy0ABdNE/400x300",
@@ -74,6 +83,7 @@ const GalleryImages = [
     imageSlide: "7",
   },
   {
+    id: "10",
     imageHref: "#",
     cName: "img-fluid img-thumbnail",
     imageSrc: "https://source.unsplash.com/G9Rfc1qccH4/400x300",
@@ -82,6 +92,7 @@ const GalleryImages = [
     imageSlide: "8",
   },
   {
+    id: "11",
     imageHref: "#",
     cName: "img-fluid img-thumbnail",
     imageSrc: "https://source.unsplash.com/aJeH0KcFkuc/400x300",
@@ -90,6 +101,7 @@ const GalleryImages = [
     imageSlide: "9",
   },
   {
+    id: "12",
     imageHref: "#",
     cName: "img-fluid img-thumbnail",
     imageSrc: "https://source.unsplash.com/p2TQ-3Bh3Oo/400x300",
@@ -110,19 +122,19 @@ class Gallery extends Component {
               Gallery
             </h1>
 
-            <hr class="mt-2 mb-5"></hr>
+            <hr className="mt-2 mb-5"></hr>
 
             <div
-              class="row text-center text-lg-left"
+              className="row text-center text-lg-left"
               data-toggle="modal"
               data-target="#exampleModal"
             >
               {GalleryImages.map((item, index) => {
                 return (
-                  <div class="col-lg-3 col-md-4 col-6">
+                  <div className="col-lg-3 col-md-4 col-6">
                     <a href={item.imageHref} class="d-block mb-4 h-100">
                       <img
-                        key={index}
+                        key={index.id}
                         className={item.cName}
                         src={item.imageSrc}
                         alt={item.imageAlt}

@@ -39,7 +39,7 @@ export default function Navbar() {
               <h4>Zo&#235; Mazurkiewicz </h4>
             </div>
             <div className="row">
-            <div classNamwe="col-sm-12">
+            <div className="col-sm-12">
             {SidebarData.map((item, index) => {
               return (
                 <li key={index} className={item.cName}>

@@ -4,10 +4,12 @@ import { addToCart } from "../components/actions/cartActions";
 import "../css/Shop.css";
 
 
+
 class Shop extends Component {
 
   handleClick = (id) => {
     this.props.addToCart(id);
+    console.log('clicked');
   };
 
   render() {
