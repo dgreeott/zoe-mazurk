@@ -13,11 +13,11 @@ div.section {
     cursor: pointer;
 }
 .card{
-    width: 300px;
+    width: 250px;
 }
 .card .card-image .card-title{
     color: black;
-    font-weight: 400
+    font-weight: 400;
 }
 .cart{
     margin-top:40px;
