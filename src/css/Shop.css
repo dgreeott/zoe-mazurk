@@ -13,7 +13,8 @@ div.section {
     cursor: pointer;
 }
 .card{
-    width: 250px;
+    width: 300px;
+    
 }
 .card .card-image .card-title{
     color: black;
