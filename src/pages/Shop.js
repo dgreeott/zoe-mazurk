@@ -3,33 +3,38 @@ import { connect } from "react-redux";
 import { addToCart } from "../components/actions/cartActions";
 import "../css/Shop.css";
 
+
+
 class Shop extends Component {
+
   handleClick = (id) => {
     this.props.addToCart(id);
-    console.log("clicked");
+    console.log('clicked');
   };
 
   render() {
     let itemList = this.props.items.map((item) => {
       return (
         <div className="card" key={item.id}>
-          <img className="card-image-top" src={item.img} alt={item.title} />
-          <div className="card-body">
-            <h5 className="card-title">{item.title}</h5>
-            <a
-              href="more.php"
-              class="btn btn-primary"
+          <div className="card-image">
+            <img src={item.img} alt={item.title} />
+            <span className="card-title">{item.title}</span>
+            <span
+              to="/"
+              className="btn-floating halfway-fab waves-effect waves-light red"
               onClick={() => {
                 this.handleClick(item.id);
               }}
             >
-              Go somewhere
-            </a>
+              <i className="material-icons">+</i>
+            </span>
+          </div>
+
+          <div className="card-content">
             <p>{item.desc}</p>
             <p>
               <b>Price: {item.price}$</b>
             </p>
-           
           </div>
         </div>
       );
@@ -37,7 +42,7 @@ class Shop extends Component {
     return (
       <div className="section">
         <div className="container">
-          <h1 className="text-center p-4">Our items</h1>
+          <h3 className="center">Our items</h3>
           <div className="box">{itemList}</div>
         </div>
       </div>

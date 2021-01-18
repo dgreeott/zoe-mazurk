@@ -1,4 +1,13 @@
-import Item1 from "../../img/pumpkin-786668_640.jpg";
+import Item1 from "../../img/ZoePeople1.jpg";
+import Item2 from "../../img/ZoePeople2.jpg";
+import Item3 from "../../img/ZoePeople3.jpg";
+import Item4 from "../../img/ZoePeople4.jpg";
+import Item5 from "../../img/ZoePeople5.jpg";
+import Item6 from "../../img/ZoePeople6.jpg";
+import Item7 from "../../img/ZoePeople7.jpg";
+import Item8 from "../../img/ZoePeople8.jpg";
+import Item9 from "../../img/ZoePeople9.jpg";
+import Item10 from "../../img/pumpkin-786668_640.jpg";
 
 import {
   ADD_TO_CART,
@@ -24,7 +33,7 @@ const initState = {
       desc:
         "Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima, ex.",
       price: 80,
-      img: Item1,
+      img: Item2,
     },
     {
       id: 3,
@@ -32,7 +41,7 @@ const initState = {
       desc:
         "Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima, ex.",
       price: 120,
-      img: Item1,
+      img: Item3,
     },
     {
       id: 4,
@@ -40,7 +49,7 @@ const initState = {
       desc:
         "Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima, ex.",
       price: 260,
-      img: Item1,
+      img: Item4,
     },
     {
       id: 5,
@@ -48,7 +57,7 @@ const initState = {
       desc:
         "Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima, ex.",
       price: 160,
-      img: Item1,
+      img: Item5,
     },
     {
       id: 6,
@@ -56,7 +65,7 @@ const initState = {
       desc:
         "Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima, ex.",
       price: 90,
-      img: Item1,
+      img: Item6,
     },
   ],
   addedItems: [],
