@@ -3,13 +3,12 @@ import { connect } from "react-redux";
 import { addToCart } from "../components/actions/cartActions";
 import "../css/Shop.css";
 
-
+import * as IOIcons from "react-icons/io";
 
 class Shop extends Component {
-
   handleClick = (id) => {
     this.props.addToCart(id);
-    console.log('clicked');
+    console.log("clicked");
   };
 
   render() {
@@ -18,16 +17,14 @@ class Shop extends Component {
         <div className="card m-3" key={item.id}>
           <div className="card-image m-2">
             <img src={item.img} alt={item.title} />
-            <span className="card-title">{item.title}</span>
-            <span
-              to="/"
-              className="btn-floating halfway-fab waves-effect waves-light red"
-              onClick={() => {
-                this.handleClick(item.id);
-              }}
-            >
-              <i className="material-icons">+</i>
-            </span>
+            <span className="card-title m-4">{item.title}</span>
+  
+              <IOIcons.IoMdAddCircle
+                size={30}
+                onClick={() => {
+                  this.handleClick(item.id);
+                }}
+              />
           </div>
 
           <div className="card-content">
