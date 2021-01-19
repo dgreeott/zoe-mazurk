@@ -7,7 +7,7 @@ const GalleryImages = [
     id: "1",
     imageHref: "#",
     cName: "img-fluid img-thumbnail",
-    imageSrc: "https://source.unsplash.com/pWkk7iiCoDM/400x300",
+    imageSrc: "https://zoemazurk.s3-us-west-2.amazonaws.com/img/ZoePeopleItem1.jpg",
     imageAlt: "",
     imageTarget: "#carouselExample",
     imageSlide: "0",
@@ -63,6 +63,8 @@ const GalleryImages = [
     cName: "img-fluid img-thumbnail",
     imageSrc: "https://source.unsplash.com/2gYsZUmockw/400x300",
     imageAlt: "",
+    imageTarget: "#carouselExample",
+    imageSlide: "6",
   },
   {
     id: "8",
@@ -71,7 +73,7 @@ const GalleryImages = [
     imageSrc: "https://source.unsplash.com/EMSDtjVHdQ8/400x300",
     imageAlt: "",
     imageTarget: "#carouselExample",
-    imageSlide: "6",
+    imageSlide: "7",
   },
   {
     id: "9",
@@ -80,7 +82,7 @@ const GalleryImages = [
     imageSrc: "https://source.unsplash.com/8mUEy0ABdNE/400x300",
     imageAlt: "",
     imageTarget: "#carouselExample",
-    imageSlide: "7",
+    imageSlide: "8",
   },
   {
     id: "10",
@@ -89,7 +91,7 @@ const GalleryImages = [
     imageSrc: "https://source.unsplash.com/G9Rfc1qccH4/400x300",
     imageAlt: "",
     imageTarget: "#carouselExample",
-    imageSlide: "8",
+    imageSlide: "9",
   },
   {
     id: "11",
@@ -98,7 +100,7 @@ const GalleryImages = [
     imageSrc: "https://source.unsplash.com/aJeH0KcFkuc/400x300",
     imageAlt: "",
     imageTarget: "#carouselExample",
-    imageSlide: "9",
+    imageSlide: "10",
   },
   {
     id: "12",
@@ -107,7 +109,7 @@ const GalleryImages = [
     imageSrc: "https://source.unsplash.com/p2TQ-3Bh3Oo/400x300",
     imageAlt: "",
     imageTarget: "#carouselExample",
-    imageSlide: "10",
+    imageSlide: "11",
   },
 ];
 

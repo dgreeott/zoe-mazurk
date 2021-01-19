@@ -15,8 +15,8 @@ class Shop extends Component {
   render() {
     let itemList = this.props.items.map((item) => {
       return (
-        <div className="card" key={item.id}>
-          <div className="card-image">
+        <div className="card m-3" key={item.id}>
+          <div className="card-image m-2">
             <img src={item.img} alt={item.title} />
             <span className="card-title">{item.title}</span>
             <span
@@ -42,8 +42,9 @@ class Shop extends Component {
     return (
       <div className="section">
         <div className="container">
-          <h3 className="center">Our items</h3>
-          <div className="box">{itemList}</div>
+          <h3 className="font-weight-light text-center m-5">Our items</h3>
+          <hr className="mt-2 mb-5"></hr>
+          <div className="box text-center">{itemList}</div>
         </div>
       </div>
     );
