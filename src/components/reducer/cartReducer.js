@@ -1,12 +1,12 @@
-import Item1 from "../../img/ZoePeople1.jpg";
-import Item2 from "../../img/ZoePeople2.jpg";
-import Item3 from "../../img/ZoePeople3.jpg";
-import Item4 from "../../img/ZoePeople4.jpg";
-import Item5 from "../../img/ZoePeople5.jpg";
-import Item6 from "../../img/ZoePeople6.jpg";
-import Item7 from "../../img/ZoePeople7.jpg";
-import Item8 from "../../img/ZoePeople8.jpg";
-import Item9 from "../../img/ZoePeople9.jpg";
+import Item1 from "../../img/ZoePeopleItem1.jpg";
+import Item2 from "../../img/ZoePeopleItem2.jpg";
+import Item3 from "../../img/ZoePeopleItem3.jpg";
+import Item4 from "../../img/ZoePeopleItem4.jpg";
+import Item5 from "../../img/ZoePeopleItem5.jpg";
+import Item6 from "../../img/ZoePeopleItem6.jpg";
+import Item7 from "../../img/ZoePeopleItem7.jpg";
+import Item8 from "../../img/ZoePeopleItem8.jpg";
+import Item9 from "../../img/ZoePeopleItem9.jpg";
 import Item10 from "../../img/pumpkin-786668_640.jpg";
 
 import {
@@ -66,6 +66,30 @@ const initState = {
         "Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima, ex.",
       price: 90,
       img: Item6,
+    },
+    {
+      id: 7,
+      title: "Blues",
+      desc:
+        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima, ex.",
+      price: 90,
+      img: Item7,
+    },
+    {
+      id: 8,
+      title: "Blues",
+      desc:
+        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima, ex.",
+      price: 90,
+      img: Item8,
+    },
+    {
+      id: 9,
+      title: "Blues",
+      desc:
+        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima, ex.",
+      price: 90,
+      img: Item9,
     },
   ],
   addedItems: [],
