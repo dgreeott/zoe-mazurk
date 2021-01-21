@@ -29,6 +29,7 @@
     "react-script": "^2.0.5",
     "react-scripts": "4.0.1",
     "react-spring": "^9.0.0-rc.3",
+    "react-tsparticles": "^1.18.11",
     "redux": "^4.0.5",
     "redux-devtools-extension": "^2.13.8",
     "styled-components": "^5.2.1",
