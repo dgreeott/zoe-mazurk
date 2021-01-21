@@ -1,0 +1,9 @@
+div.section {
+    z-index: -1;
+    position: relative;
+    background-color: #b5651d;
+}
+
+#tsparticles {
+    background-size: cover;
+}

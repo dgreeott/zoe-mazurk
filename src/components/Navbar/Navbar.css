@@ -13,13 +13,7 @@
     margin-top: 50px;
 }
 
-.InstaIcon {
-    padding-left: 3em;
-}
 
-.EmailIcon {
-    padding-right: 3em;
-}
 
 .menu-bars {
     margin-left: 2rem;
@@ -38,7 +32,7 @@
 
 .nav-menu {
     background-color: #232323;
-    width: 300px;
+    width: 250px;
     height: 100vh;
     display: flex;
     justify-content: flex-start;

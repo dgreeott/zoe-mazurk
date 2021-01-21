@@ -8,12 +8,13 @@ class About extends Component {
     return (
       <>
         <div className="section">
-          <div className="container-fluid justify-content-center">
-            <div className="row justify-content-center m-5">
+          <div className="container-fluid">
+            <div className="row justify-content-center m-5 ">
               <h1>A Little About Me</h1>
             </div>
+            <div className="container justify-content-center">
             <div className="row">
-              <div className="col-sm-5 pl-5 ml-5">
+              <div className="col-sm-6 ">
                 <h4 className="aboutText">
                   My name is Zoë Mazurkiewicz and I'm currently working as an
                   undergraduate student at Coe College. I'm double majoring in
@@ -29,9 +30,10 @@ class About extends Component {
                   student.
                 </h4>
               </div>
-              <div className="col-sm-5 text-right">
+              <div className="col-sm-6">
                 <img src={Zoe} alt="zoe"></img>
               </div>
+            </div>
             </div>
           </div>
         </div>

@@ -17,9 +17,9 @@ export default function Navbar() {
       <IconContext.Provider value={{ color: "#fff" }}>
         <div className="navbar sticky-top">
           <div className="col-sm-3">
-          <Link to="#" className="menu-bars">
-            <FaIcons.FaBars onClick={showSidebar} />
-          </Link>
+            <Link to="#" className="menu-bars">
+              <FaIcons.FaBars onClick={showSidebar} />
+            </Link>
           </div>
           <div className="col-sm-9 text-right">
             <Link to="/cart" className="menu-bars-cart">
@@ -35,29 +35,29 @@ export default function Navbar() {
                 <AiIcons.AiOutlineClose />
               </Link>
             </li>
-            <div className="nameText center mt-5">
+            <div className="nameText justify-content-center mt-5">
               <h4>Zo&#235; Mazurkiewicz </h4>
             </div>
             <div className="row">
-            <div className="col-sm-12">
-            {SidebarData.map((item, index) => {
-              return (
-                <li key={index} className={item.cName}>
-                  <Link to={item.path}>
-                    {item.icon}
-                    <span>{item.title}</span>
-                  </Link>
-                </li>
-              );
-            })}
-            </div>
+              <div className="col-sm-12">
+                {SidebarData.map((item, index) => {
+                  return (
+                    <li key={index} className={item.cName}>
+                      <Link to={item.path}>
+                        {item.icon}
+                        <span>{item.title}</span>
+                      </Link>
+                    </li>
+                  );
+                })}
+              </div>
             </div>
             <div className="socialIcon">
               <div className="row">
-                <div className="col-sm-6 center">
+                <div className="col-sm text-center">
                   <FaIcons.FaInstagram size={40} />
                 </div>
-                <div className="col-sm-6 center">
+                <div className="col-sm text-left">
                   <AiIcons.AiOutlineMail size={40} />
                 </div>
               </div>

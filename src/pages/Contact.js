@@ -4,9 +4,8 @@ import { Button } from "../components/Button";
 import "../css/Contact.css";
 
 const Contact = () => {
-
   const [status, setStatus] = useState("Submit");
-  
+
   const handleSubmit = async (e) => {
     e.preventDefault();
     setStatus("Sending...");
@@ -30,34 +29,39 @@ const Contact = () => {
 
   return (
     <form onSubmit={handleSubmit}>
-    <div className="section">
-      <div className="container-fluid text-center">
-        <h1 className="title m-5" id="contact">
-          Contact Me
-        </h1>
-        <h6>I will get back to you as soon as possible!</h6>
-      </div>
-      <div className="container-fluid w-50">
-        <div className="row mt-4">
-          <div className="col-sm text-center">
-            <div>
-              <label htmlFor="name">Name:</label>
-              <input className="formControl" type="text" id="name" required />
-            </div>
-            <div>
-              <label htmlFor="email">Email:</label>
-              <input className="formControl" type="email" id="email" required />
-            </div>
-            <div>
-              <label htmlFor="message">Message:</label>
-              <textarea className="formMessage" id="message" required />
-            </div>
-            <div className="text-center">
-              <Button className="contactButton">{status}</Button>
+      <div className="section">
+        <div className="container-fluid text-center">
+          <h1 className="title m-5" id="contact">
+            Contact Me
+          </h1>
+          <h6>I will get back to you as soon as possible!</h6>
+        </div>
+        <div className="container w-50">
+          <div className="row mt-4">
+            <div className="col-sm text-center">
+              <div>
+                <label htmlFor="name">Name:</label>
+                <input className="formControl" type="text" id="name" required />
+              </div>
+              <div>
+                <label htmlFor="email">Email:</label>
+                <input
+                  className="formControl"
+                  type="email"
+                  id="email"
+                  required
+                />
+              </div>
+              <div>
+                <label htmlFor="message">Message:</label>
+                <textarea className="formMessage" id="message" required />
+              </div>
+              <div className="text-center">
+                <Button className="contactButton">{status}</Button>
+              </div>
             </div>
           </div>
         </div>
-      </div>
       </div>
     </form>
   );
