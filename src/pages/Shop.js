@@ -38,7 +38,7 @@ class Shop extends Component {
     });
     return (
       <div className="section">
-        <div className="container">
+        <div className="container" id="shopPage">
           <h3 className="font-weight-light text-center m-5">Our items</h3>
           <hr className="mt-2 mb-5"></hr>
           <div className="box text-center">{itemList}</div>
