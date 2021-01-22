@@ -1,31 +1,45 @@
-import '../css/App.css';
-import Navbar from './Navbar/Navbar';
-import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
-import Home from '../pages/Home';
-import About from '../pages/About';
-import Gallery from '../pages/Gallery';
-import Shop from '../pages/Shop';
-import Contact from '../pages/Contact';
-import Cart from '../pages/Cart';
-
+import "../css/App.css";
+import Navbar from "./Navbar/Navbar";
+import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+import Home from "../pages/Home";
+import About from "../pages/About";
+import Gallery from "../pages/Gallery";
+import Shop from "../pages/Shop";
+import Contact from "../pages/Contact";
+import Cart from "../pages/Cart";
 
 const App = () => {
-
   return (
     <>
       <Router>
-        <Navbar />
         <Switch>
-          <Route path='/' exact component={Home}/>
-          <Route path='/gallery' component={Gallery}/>
-          <Route path='/about' component={About}/>
-          <Route path='/shop' component={Shop}/>
-          <Route path='/contact' component={Contact}/>
-          <Route path='/cart' component={Cart}/>
+          <Route path="/" exact>
+            <Home />
+          </Route>
+          <Route path="/gallery" exact>
+            <Navbar />
+            <Gallery />
+          </Route>
+          <Route path="/about" exact>
+            <Navbar />
+            <About />
+          </Route>
+          <Route path="/shop" exact>
+            <Navbar />
+            <Shop />
+          </Route>
+          <Route path="/contact" exact>
+            <Navbar />
+            <Contact />
+          </Route>
+          <Route path="/cart" exact>
+            <Navbar />
+            <Cart />
+          </Route>
         </Switch>
-      </Router> 
+      </Router>
     </>
   );
-}
+};
 
 export default App;
