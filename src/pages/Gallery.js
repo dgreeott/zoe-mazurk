@@ -106,7 +106,7 @@ function Gallery() {
   return (
     <>
       <div className="section">
-        <div className="container-fluid">
+        <div className="container">
           <h1 className="font-weight-light text-center m-4">Gallery</h1>
 
           <hr className="mt-2 mb-5"></hr>
