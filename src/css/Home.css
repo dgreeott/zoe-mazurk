@@ -1,9 +1,49 @@
-div.section {
-    z-index: -1;
-    position: relative;
-    background-color: #b5651d;
-}
 
-#tsparticles {
-    background-size: cover;
-}
+  
+  #tsparticles {
+    position: fixed;
+    height: 100vh;
+    width: 100vw;
+    z-index: 0;
+  }
+
+  .container {
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 10px;
+    box-shadow: 0 15px 25px rgba(0, 0, 0, 0.8);
+    margin: auto auto;
+    padding: 40px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  
+  
+  /* Styls for the list (Project, About, Contact)*/
+ul.headerList {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+  }
+  
+  li.header {
+    display: inline;
+    float: center;
+  }
+  
+  .header li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 16px;
+    text-decoration: none;
+  }
+  
+  .header li a:hover {
+    background-color: #fff;
+  }
+
+  
+  

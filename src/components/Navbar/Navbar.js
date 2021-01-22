@@ -36,7 +36,7 @@ export default function Navbar() {
               </Link>
             </li>
             <div className="nameText justify-content-center mt-5">
-              <h4>Zo&#235; Mazurkiewicz </h4>
+              <h4>Zo&#235; Mazurkiewicz</h4>
             </div>
             <div className="row">
               <div className="col-sm-12">
