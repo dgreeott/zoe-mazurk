@@ -1,6 +1,5 @@
 import React, { useState } from "react";
 import { Button } from "../components/Button";
-import Navbar from "../components/Navbar/Navbar";
 
 import "../css/Contact.css";
 
@@ -30,16 +29,20 @@ const Contact = () => {
 
   return (
     <>
-      <Navbar />
       <form onSubmit={handleSubmit}>
         <div className="section">
-          <div className="container-fluid text-center">
-            <h1 className="title m-5" id="contact">
-              Contact Me
-            </h1>
-            <h6>I will get back to you as soon as possible!</h6>
-          </div>
           <div className="container w-50">
+            <div className="row text-center">
+            <div className="col-sm justify-content-center">
+            <h1 className="title m-5" id="contact">
+                Contact Me
+              </h1>
+            </div>
+              
+              <div className="row text-center">
+                <h6>I will get back to you as soon as possible!</h6>
+              </div>
+            </div>
             <div className="row mt-4">
               <div className="col-sm text-center">
                 <div>

@@ -2,7 +2,6 @@ import React, { Component } from "react";
 import { Link } from "react-router-dom";
 
 import Particles from "react-tsparticles";
-import { Button } from "../components/Button";
 
 import "../css/Home.css";
 
@@ -20,7 +19,7 @@ export const PageItems = [
   {
     title: "CONTACT",
     url: "/contact",
-    cName: "btn",
+    cName: "btn btn-outline-dark",
   },
 ];
 
@@ -109,7 +108,7 @@ class Home extends Component {
             detectRetina: true,
           }}
         />
-        <div className="container text-center">
+        <div className="container text-center" id="homepage">
           <h1 className="mb-4">Zo&#235; Mazurkiewicz</h1>
           <div className="box justify-content-center">
         <div className="row">

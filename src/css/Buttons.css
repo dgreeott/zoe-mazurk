@@ -13,8 +13,8 @@
 .btn:hover {
     padding: 8px 20px;
     transition: all 0.3s ease-out;
-    background: #f25042;
-    color: #232323;
+    background: #232323;
+    color: #ffffff;
     transition: 250ms;
 }
 

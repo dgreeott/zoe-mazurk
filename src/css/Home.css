@@ -1,4 +1,14 @@
-
+html * {
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: sans-serif;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+  }
+  
   
   #tsparticles {
     position: fixed;
@@ -7,7 +17,13 @@
     z-index: 0;
   }
 
-  .container {
+  header {
+    display: none;
+  }  
+
+  
+
+  #homepage.container  {
     background-color: rgba(255, 255, 255, 0.8);
     border-radius: 10px;
     box-shadow: 0 15px 25px rgba(0, 0, 0, 0.8);
@@ -21,7 +37,7 @@
   
   
   /* Styls for the list (Project, About, Contact)*/
-ul.headerList {
+  ul.headerList {
     list-style-type: none;
     margin: 0;
     padding: 0;
