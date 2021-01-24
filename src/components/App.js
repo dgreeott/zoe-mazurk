@@ -24,17 +24,9 @@ const App = () => {
             <Navbar />
             <About />
           </Route>
-          <Route path="/shop" exact>
-            <Navbar />
-            <Shop />
-          </Route>
           <Route path="/contact" exact>
             <Navbar />
             <Contact />
-          </Route>
-          <Route path="/cart" exact>
-            <Navbar />
-            <Cart />
           </Route>
         </Switch>
       </Router>

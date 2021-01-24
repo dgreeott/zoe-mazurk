@@ -8,11 +8,10 @@ class About extends Component {
     return (
       <>
         <div className="section">
-          <div className="container-fluid">
-            <div className="row justify-content-center m-5 ">
+            <div className="container justify-content-center">
+            <div className="row justify-content-center m-3 ">
               <h1>A Little About Me</h1>
             </div>
-            <div className="container justify-content-center">
             <div className="row">
               <div className="col-sm-6 ">
                 <h4 className="aboutText">
@@ -36,7 +35,6 @@ class About extends Component {
             </div>
             </div>
           </div>
-        </div>
       </>
     );
   }
