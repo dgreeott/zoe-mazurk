@@ -31,13 +31,15 @@ div.section {
 }
 
 .container  {
+
   background-color: #fffffe;
   border-radius: 10px;
   box-shadow: 0 15px 25px rgba(0, 0, 0, 0.8);
   margin: auto auto;
   padding: 40px;
+  padding-bottom: 40px;
   position: absolute;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, 5%);
+  transform: translate(-50%, 3%);
 }

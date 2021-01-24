@@ -8,8 +8,8 @@ class About extends Component {
     return (
       <>
         <div className="section">
-            <div className="container justify-content-center">
-            <div className="row justify-content-center m-3 ">
+          <div className="container justify-content-center">
+            <div className="row justify-content-center m-3">
               <h1>A Little About Me</h1>
             </div>
             <div className="row">
@@ -32,7 +32,6 @@ class About extends Component {
               <div className="col-sm-6">
                 <img src={Zoe} alt="zoe"></img>
               </div>
-            </div>
             </div>
           </div>
       </>
