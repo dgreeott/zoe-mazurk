@@ -1,6 +1,7 @@
 div.section {
     z-index: -1;
     position: relative;
+    background-color: #55423d;
 }
 
 h4.aboutText {

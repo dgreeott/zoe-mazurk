@@ -14,16 +14,11 @@ export default function Navbar() {
 
   return (
     <>
-      <IconContext.Provider value={{ color: "#fff" }}>
+      <IconContext.Provider value={{ color: "#271c19" }}>
         <div className="navbar sticky-top">
           <div className="col-sm-3">
             <Link to="#" className="menu-bars">
               <FaIcons.FaBars onClick={showSidebar} />
-            </Link>
-          </div>
-          <div className="col-sm-9 text-right">
-            <Link to="/cart" className="menu-bars-cart">
-              <AiIcons.AiOutlineShoppingCart size={40} />
             </Link>
           </div>
         </div>

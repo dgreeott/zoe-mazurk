@@ -12,7 +12,7 @@
 .gallery,
 .contact,
 .home {
-  background-color: #f9f4ef;
+  background-color: #271c19;
 
   display: flex;
   height: 90vh;
@@ -22,7 +22,7 @@
 }
 
 .nav {
-  color: #f9f4ef;
+  color: #271c19;
 }
 
 div.section {
@@ -31,8 +31,9 @@ div.section {
 }
 
 .container  {
-  background-color: rgba(255, 255, 255, 0.8);
-  border-radius: 15px;
+
+  background-color: #fffffe;
+  border-radius: 10px;
   box-shadow: 0 15px 25px rgba(0, 0, 0, 0.8);
   margin: auto auto;
   padding: 40px;
