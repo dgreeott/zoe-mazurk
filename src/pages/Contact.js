@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { Button } from "../components/Button";
+import ContactForm from '../contact/index';
 
 import "../css/Contact.css";
 
@@ -45,31 +45,7 @@ const Contact = () => {
             </div>
             <div className="row mt-4">
               <div className="col-sm text-center">
-                <div>
-                  <label htmlFor="name">Name:</label>
-                  <input
-                    className="formControl"
-                    type="text"
-                    id="name"
-                    required
-                  />
-                </div>
-                <div>
-                  <label htmlFor="email">Email:</label>
-                  <input
-                    className="formControl"
-                    type="email"
-                    id="email"
-                    required
-                  />
-                </div>
-                <div>
-                  <label htmlFor="message">Message:</label>
-                  <textarea className="formMessage" id="message" required />
-                </div>
-                <div className="text-center">
-                  <Button className="contactButton">{status}</Button>
-                </div>
+                
               </div>
             </div>
           </div>
