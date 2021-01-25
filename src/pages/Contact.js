@@ -45,7 +45,7 @@ const Contact = () => {
             </div>
             <div className="row mt-4">
               <div className="col-sm text-center">
-                
+                <ContactForm />
               </div>
             </div>
           </div>

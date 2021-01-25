@@ -1,6 +1,5 @@
 import React, { useState } from 'react'
 import { Axios, db } from '../firebase/firebaseConfig'
-import './styled.scss'
 
 const ContactForm = () => {
   const [formData, setFormData] = useState({})
