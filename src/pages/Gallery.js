@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 
 import Image1 from "../img/ZoePeople8_400X400.jpg";
 import Image2 from "../img/ZoePeople5_400X400.jpg";
@@ -99,10 +99,6 @@ const GalleryImages = [
 ];
 
 function Gallery() {
-  const [show, setShow] = useState(false);
-
-  const handleClose = () => setShow(false);
-  const handleShow = () => setShow(true);
 
   return (
     <>
@@ -128,7 +124,6 @@ function Gallery() {
                       alt={item.imageAlt}
                       data-target={item.imageTarget}
                       data-slide-to={item.imageSlide}
-                      onClick={handleShow}
                     />
                   </a>
                 </div>
