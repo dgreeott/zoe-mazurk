@@ -100,7 +100,7 @@ function Gallery() {
   return (
     <>
       <div className="section">
-        <div className="container mb-5">
+        <div className="container m-5">
           <div className="row">
             <h1 className="text-center m-4">Gallery</h1>
           </div>
