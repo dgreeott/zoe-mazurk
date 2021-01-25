@@ -5,13 +5,13 @@ import './styled.scss'
 const ContactForm = () => {
   const [formData, setFormData] = useState({})
 
-  const updateInput = e => {
+  const updateInput = (e) => {
     setFormData({
       ...formData,
       [e.target.name]: e.target.value,
     })
   }
-  const handleSubmit = event => {
+  const handleSubmit = (event) => {
     event.preventDefault()
     sendEmail()
     setFormData({

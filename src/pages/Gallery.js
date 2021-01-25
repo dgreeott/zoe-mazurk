@@ -10,9 +10,7 @@ import Image7 from "../img/ZoePeople7_400X400.jpg";
 import Image8 from "../img/ZoePeople1_400X400.jpg";
 import Image9 from "../img/ZoePeople6_400X400.jpg";
 
-import "../css/Gallery.css";
-import '../css/App.css';
-
+import "../css/App.css";
 
 const GalleryImages = [
   {
@@ -99,14 +97,15 @@ const GalleryImages = [
 ];
 
 function Gallery() {
-
   return (
     <>
       <div className="section">
         <div className="container mb-5">
-          <h1 className="font-weight-light text-center m-4">Gallery</h1>
+          <div className="row">
+            <h1 className="text-center m-4">Gallery</h1>
+          </div>
 
-          <hr className="mt-2 mb-5"></hr>
+          <hr className="mt-2"></hr>
 
           <div
             className="row text-center text-lg-left"
@@ -130,8 +129,6 @@ function Gallery() {
               );
             })}
           </div>
-
-         
         </div>
       </div>
     </>
