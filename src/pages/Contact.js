@@ -1,7 +1,7 @@
 import React from "react";
 import ContactForm from "../contact/index";
 
-import "../css/Contact.css";
+import "../css/App.css";
 
 const Contact = () => {
   return (
@@ -11,6 +11,7 @@ const Contact = () => {
           <div className="row">
             <h1>Contact</h1>
           </div>
+          <hr className="mt-2"></hr>
           <div className="row">
             <ContactForm />
           </div>
