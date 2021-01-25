@@ -7,7 +7,6 @@ import Item6 from "../../img/ZoePeopleItem6.jpg";
 import Item7 from "../../img/ZoePeopleItem7.jpg";
 import Item8 from "../../img/ZoePeopleItem8.jpg";
 import Item9 from "../../img/ZoePeopleItem9.jpg";
-import Item10 from "../../img/pumpkin-786668_640.jpg";
 
 import {
   ADD_TO_CART,

@@ -1,7 +1,7 @@
 h1 {
     display: table;
     margin: 40px auto;
-    color: #fff;
+    color: #271c19;
     font: 30px Helvetica;
     letter-spacing: 2px;
     text-transform: uppercase;
@@ -19,15 +19,16 @@ h1 {
       display: block;
       border: none;
       padding: 20px;
-      width: 300px;
+      width: 500px;
       margin-bottom: 20px;
       font-size: 18px;
       outline: none;
       transition: all 0.2s ease-in-out;
+      background-color: #999;
   
       &::placeholder {
         transition: all 0.2s ease-in-out;
-        color: #999;
+        color: #271c19;
         font: 18px Helvetica, Arial, sans-serif;
       }
   
