@@ -53,7 +53,7 @@ export default function Navbar() {
                   <FaIcons.FaInstagram size={40} />
                 </div>
                 <div className="col-sm text-left">
-                  <AiIcons.AiOutlineMail size={40} />
+                  <FaIcons.FaEnvelope size={40} />
                 </div>
               </div>
             </div>

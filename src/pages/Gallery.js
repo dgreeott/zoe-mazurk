@@ -1,5 +1,4 @@
 import React from "react";
-import Footer from "../pages/Footer";
 
 import Image1 from "../img/ZoePeople8_400X400.jpg";
 import Image2 from "../img/ZoePeople5_400X400.jpg";
@@ -103,7 +102,7 @@ function Gallery() {
       <div className="section">
         <div className="container mt-5 mb-5">
           <div className="row">
-            <h1 className="text-center m-4">Gallery</h1>
+            <h1 className="text-center">Gallery</h1>
           </div>
 
           <hr className="mt-2"></hr>
