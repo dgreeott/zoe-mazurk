@@ -1,63 +1,59 @@
 import React, { Component } from "react";
+import * as FaIcons from "react-icons/fa";
 import "../css/App.css";
 
 class Footer extends Component {
   render() {
     return (
-      <footer className="text-center text-lg-start">
-        <div className="container-fluid">
-          <div className="row">
-            <div className="col-lg-3 col-md-6 mb-md-0">
-              <h4 className="text-light">Menu</h4>
-              <ul className="list-unstyled mb-0">
-                <li>
-                  <a href="/" className="text-light">
-                    Home
-                  </a>
-                </li>
-                <li>
-                  <a href="/gallery" className="text-light">
-                    Gallery
-                  </a>
-                </li>
-                <li>
-                  <a href="/about" className="text-light">
-                    About
-                  </a>
-                </li>
-                <li>
-                  <a href="/contact" className="text-light">
-                    Contact
-                  </a>
-                </li>
-                <li>
-                  <a href="#!" className="text-light">
-                    <a
-                      className="icons-footer"
-                      href="mailto:drake.greeott@gmail.com"
-                      target="__blank"
-                    >
-                      <i class="fas fa-envelope"></i>
-                    </a>
-                    <a
-                      className="icons-footer"
-                      href="https://www.linkedin.com/in/drakegreeott/"
-                      target="__blank"
-                    >
-                      <i class="fab fa-linkedin"></i>
-                    </a>
-                    <a
-                      className="icons-footer"
-                      href="https://github.com/dgreeott"
-                      target="__blank"
-                    >
-                      <i class="fab fa-github"></i>
-                    </a>
-                  </a>
-                </li>
-              </ul>
+      <footer>
+        <div class="row my-5 justify-content-center py-5">
+          <div class="col-11">
+            <div class="row ">
+              <div class="col-xl-6 col-md-4 col-sm-4 col-12">
+                <div className="row">
+                  <h3 class=" mb-md-0 mb-5 bold-text">Zoë Mazurkiewicz</h3>
+                  </div>
+                  <div class="row ">
+              <div class="col-xl-8 col-md-4 col-sm-4 col-auto">
+                <p class="social  bold-text">
+                  {" "}
+                  <span class="mx-2">
+                    <FaIcons.FaFacebook size={30} />
+                  </span>{" "}
+                  <span class="mx-2">
+                    <FaIcons.FaLinkedin size={30} />
+                  </span>{" "}
+                  <span class="mx-2">
+                    <FaIcons.FaInstagram size={30} />
+                  </span>{" "}
+                  <span class="mx-2">
+                    <FaIcons.FaEnvelope size={30} />
+                  </span>{" "}
+                </p>
+              </div>
             </div>
-            <div className="col-lg-3 col-md-6 mb-md-0"></div>
+                
+              </div>
+              <div class="col-xl-3 col-md-4 col-sm-4 col-12">
+                <h6 class="mb-3 mb-lg-4 bold-text">
+                  <b>MENU</b>
+                </h6>
+                <ul class="list-unstyled">
+                  <li>Home</li>
+                  <li>Gallery</li>
+                  <li>About</li>
+                  <li>Contact</li>
+                </ul>
+              </div>
+              <div class="col-xl-3 col-md-4 col-sm-4 col-12">
+                <h6 class="mb-3 mb-lg-4 bold-text mt-sm-0 mt-5">
+                  <b>ADDRESS</b>
+                </h6>
+                <p class="mb-1">605, RATAN ICON BUILDING</p>
+                <p>SEAWOODS SECTOR</p>
+              </div>
+            </div>
+            
           </div>
         </div>
       </footer>

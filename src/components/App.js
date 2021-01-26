@@ -19,6 +19,7 @@ const App = () => {
           <Route path="/gallery" exact>
             <Navbar />
             <Gallery />
+            <Footer />
           </Route>
           <Route path="/about" exact>
             <Navbar />
