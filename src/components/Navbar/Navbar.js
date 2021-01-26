@@ -14,7 +14,7 @@ export default function Navbar() {
 
   return (
     <>
-      <IconContext.Provider value={{ color: "#271c19" }}>
+      <IconContext.Provider value={{ color: "#ffffff" }}>
         <div className="navbar sticky-top">
           <div className="col-sm-3">
             <Link to="#" className="menu-bars">

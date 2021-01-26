@@ -30,6 +30,15 @@ div.section {
   position: relative;
 }
 
+.container {
+  background-color: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 15px 25px rgba(0, 0, 0, 0.8);
+  margin: auto auto;
+  padding-bottom: 40px;
+}
+
+/*
 .container  {
 
   background-color: #fffffe;
@@ -42,6 +51,33 @@ div.section {
   top: 50%;
   left: 50%;
   transform: translate(-50%, 3%);
+}
+*/
+
+/* Styls for the list (Home, Project, About, Contact)*/
+ul.headerList {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+li.header {
+  display: inline;
+  float: center;
+  color: #271c19;
+}
+
+.header li a {
+  display: block;
+  color: #271c19;
+  text-align: center;
+  padding: 16px;
+  text-decoration: none;
+}
+
+.header li a:hover {
+  background-color: #271c19;
 }
 
 /* ---------- Home Page Styles ---------- */
@@ -79,31 +115,7 @@ div.row {
   justify-content: center;
 }
 
-/* Styls for the list (Home, Project, About, Contact)*/
-ul.headerList {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  overflow: hidden;
-}
 
-li.header {
-  display: inline;
-  float: center;
-  color: #271c19;
-}
-
-.header li a {
-  display: block;
-  color: #271c19;
-  text-align: center;
-  padding: 16px;
-  text-decoration: none;
-}
-
-.header li a:hover {
-  background-color: #271c19;
-}
 
 /* ---------- Gallery Page Styles ---------- */
 @import "~react-image-gallery/styles/css/image-gallery.css";
@@ -233,3 +245,29 @@ div.section {
   min-width: 100%;
 }
 
+/* ---------- Footer Styles ---------- */
+footer {
+  background-color: #696969;
+  color: #271c19;
+}
+
+a.icons-footer:link
+{
+ color: #271c19;
+ text-decoration: none;
+}
+a.icons-footer:visited
+{
+ color: #271c19;
+ text-decoration: none;
+}
+a.icons-footer:hover
+{
+ color: #271c19;
+ text-decoration: none;
+}
+a.icons-footer:active
+{
+ color: #271c19;
+ text-decoration: none;
+}

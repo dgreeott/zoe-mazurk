@@ -1,13 +1,15 @@
 import React from "react";
 import ContactForm from "../contact/index";
 
+import Footer from "../pages/Footer";
+
 import "../css/App.css";
 
 const Contact = () => {
   return (
     <>
       <div className="section">
-        <div className="container">
+        <div className="container mt-5 mb-5">
           <div className="row">
             <h1>Contact</h1>
           </div>
@@ -17,6 +19,7 @@ const Contact = () => {
           </div>
         </div>
       </div>
+      <Footer />
     </>
   );
 };
