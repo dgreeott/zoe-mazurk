@@ -10,8 +10,8 @@ class Footer extends Component {
       <footer>
         <div className="col-12 pt-2">
           <div className="row ">
-            <div className="col-xl-8 col-md-4 col-sm-4 col-12">
-              <div className="row">
+            <div className="col-xl-9 col-md-4 col-sm-4 col-12 ">
+              <div className="row text-center">
                 <h3 className="mb-md-0 m-4 bold-text text-light">Zoë Mazurkiewicz</h3>
                 </div>
                 <div className="row mt-3 mb-5">
@@ -31,7 +31,7 @@ class Footer extends Component {
               
               </div>
             <div className="col-xl-2 col-md-4 col-sm-4 col-12 text-right mt-5">
-              <a className="text-light" href="#" >Back to top</a>
+              <a className="text-light" href="#"><FaIcons.FaHandPointUp size={40} /></a>
             </div>
           </div>
         </div>

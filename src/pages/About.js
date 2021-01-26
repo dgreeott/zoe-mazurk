@@ -1,7 +1,6 @@
 import React, { Component } from "react";
 import "../css/App.css";
 
-import Footer from '../pages/Footer';
 import Zoe from "../img/ZoeMazurk.jpg";
 
 
@@ -10,7 +9,7 @@ class About extends Component {
   render() {
     return (
       <>
-        <div className="section">
+        <div className="section" >
           <div className="container mt-5 mb-5">
             <div className="row mt-4">
               <h1>A Little About Me</h1>
@@ -40,7 +39,6 @@ class About extends Component {
               </div>
             </div>
           </div>
-          <Footer />
         </div>
         
       </>
