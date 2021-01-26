@@ -24,10 +24,12 @@ const App = () => {
           <Route path="/about" exact>
             <Navbar />
             <About />
+            <Footer />
           </Route>
           <Route path="/contact" exact>
             <Navbar />
             <Contact />
+            <Footer />
           </Route>
         </Switch>
       </Router>
