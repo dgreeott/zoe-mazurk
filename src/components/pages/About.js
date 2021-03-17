@@ -1,7 +1,7 @@
 import React, { Component } from "react";
-import "../css/App.css";
 
-import Zoe from "../img/ZoeMazurk.jpg";
+
+import Zoe from "../../img/ZoeMazurk.jpg";
 
 
 

@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import { IconContext } from "react-icons";
 import * as FaIcons from "react-icons/fa";
-import "../css/App.css";
+
 
 class Footer extends Component {
   render() {

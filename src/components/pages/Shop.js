@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import { connect } from "react-redux";
-import { addToCart } from "../components/actions/cartActions";
+import { addToCart } from "../actions/cartActions";
 import "../css/Shop.css";
 
 import * as IOIcons from "react-icons/io";
