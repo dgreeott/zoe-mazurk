@@ -1,16 +1,16 @@
 import React from "react";
 
-import Image1 from "../img/ZoePeople8_400X400.jpg";
-import Image2 from "../img/ZoePeople5_400X400.jpg";
-import Image3 from "../img/ZoePeople4_400X400.jpg";
-import Image4 from "../img/ZoePeople3_400X400.jpg";
-import Image5 from "../img/ZoePeople2_400X400.jpg";
-import Image6 from "../img/ZoePeople9_400X400.jpg";
-import Image7 from "../img/ZoePeople7_400X400.jpg";
-import Image8 from "../img/ZoePeople1_400X400.jpg";
-import Image9 from "../img/ZoePeople6_400X400.jpg";
+import Image1 from "../../img/ZoePeople8_400X400.jpg";
+import Image2 from "../../img/ZoePeople5_400X400.jpg";
+import Image3 from "../../img/ZoePeople4_400X400.jpg";
+import Image4 from "../../img/ZoePeople3_400X400.jpg";
+import Image5 from "../../img/ZoePeople2_400X400.jpg";
+import Image6 from "../../img/ZoePeople9_400X400.jpg";
+import Image7 from "../../img/ZoePeople7_400X400.jpg";
+import Image8 from "../../img/ZoePeople1_400X400.jpg";
+import Image9 from "../../img/ZoePeople6_400X400.jpg";
 
-import "../css/App.css";
+
 
 const GalleryImages = [
   {
